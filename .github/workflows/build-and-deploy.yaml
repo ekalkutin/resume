@@ -5,7 +5,7 @@ on:
     branches: ['main']
 
 env:
-  IMAGE_NAME: ecalcutin/resume
+  IMAGE_NAME: ekalkutin/resume
 
 jobs:
   increment-version:

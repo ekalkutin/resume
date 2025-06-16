@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
         })}
       </ul>
 
-      <a href='https://github.com/ecalcutin/resume'>
+      <a href='https://github.com/ekalkutin/resume'>
         <div>Designed &amp; Built by Evgenii Kalkutin</div>
       </a>
     </footer>

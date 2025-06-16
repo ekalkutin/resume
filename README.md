@@ -74,7 +74,7 @@ A blazing-fast, 100% PageSpeed optimized portfolio website with server-side rend
 
 ```bash
 # Clone the repository
-git clone https://github.com/ecalcutin/resume.git
+git clone https://github.com/ekalkutin/resume.git
 cd resume
 
 # Install dependencies

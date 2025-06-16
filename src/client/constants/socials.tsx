@@ -19,7 +19,7 @@ export const SOCIAL_LINKS: Array<{
   },
   {
     title: 'GitHub',
-    url: 'https://github.com/ecalcutin',
+    url: 'https://github.com/ekalkutin',
     icon: <FaGithub />,
   },
   {

@@ -11,7 +11,7 @@ on:
         required: true
 
 env:
-  IMAGE_NAME: ecalcutin/resume
+  IMAGE_NAME: ekalkutin/resume
 
 jobs:
   deploy-to-cluster:
