@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 type Experience = {
   readonly company: string;
   readonly position: string;
+  readonly dateRange: string;
   readonly description: string;
   readonly achievements: Array<string>;
 };
@@ -29,7 +30,7 @@ export const ExperienceTabPanels: React.FC<Props> = props => {
               <span className={styles.company}>&nbsp;@&nbsp;{company}</span>
             </h3>
 
-            <p className={styles.range}>Jun 2020 - Jan 2021</p>
+            <p className={styles.range}>{experience.dateRange}</p>
             <p>{description}</p>
             <ul>
               {achievements.map((achievement, index) => (

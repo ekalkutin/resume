@@ -1,7 +1,7 @@
 import React, { Fragment, useLayoutEffect } from 'react';
 
 import 'client/styles/global.css';
-import { version } from '../../package.json';
+import packageJSON from '../../package.json';
 
 import { MainLayout } from './layouts/MainLayout';
 import { About } from './sections/About';
@@ -13,7 +13,7 @@ import { Hero } from './sections/Hero';
 export const App: React.FC = () => {
   useLayoutEffect(() => {
     // eslint-disable-next-line
-    console.log(`App version: ${version}`);
+    console.log(`App version: ${packageJSON.version}`);
   }, []);
 
   return (
