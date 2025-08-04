@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  FaSkype,
   FaInstagram,
   FaLinkedin,
   FaGithub,
   FaTelegram,
+  FaMicrosoft,
 } from 'react-icons/fa';
 
 export const SOCIAL_LINKS: Array<{
@@ -14,7 +14,7 @@ export const SOCIAL_LINKS: Array<{
 }> = [
   {
     title: 'Telegram',
-    url: 'https://t.me/ecalcutin',
+    url: 'https://t.me/ekalkutin',
     icon: <FaTelegram />,
   },
   {
@@ -24,7 +24,7 @@ export const SOCIAL_LINKS: Array<{
   },
   {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/ecalcutin',
+    url: 'https://www.linkedin.com/in/ekalkutin',
     icon: <FaLinkedin />,
   },
   {
@@ -33,8 +33,8 @@ export const SOCIAL_LINKS: Array<{
     icon: <FaInstagram />,
   },
   {
-    title: 'Skype',
-    url: 'skype:evgheni.calcutin@gmail.com?chat',
-    icon: <FaSkype />,
+    title: 'Teams',
+    url: 'https://teams.microsoft.com/l/chat/0/0?users=evgenii.kalkutin@gmail.com',
+    icon: <FaMicrosoft />,
   },
 ];

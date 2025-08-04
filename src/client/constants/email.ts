@@ -1,1 +1,1 @@
-export const EMAIL = 'evgheni.calcutin@gmail.com';
+export const EMAIL = 'inbox-resume@kalkutin.dev';
