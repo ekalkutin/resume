@@ -28,5 +28,15 @@
 }
 
 .cta {
+  display: flex;
+  gap: 24px;
   margin-top: 5rem;
+
+  .resume {
+    button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
 }

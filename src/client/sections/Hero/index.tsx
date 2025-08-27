@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFilePdf } from 'react-icons/fa6';
 
 import { Button } from 'client/components/Button';
 import { Section } from 'client/components/Section';
@@ -37,6 +38,11 @@ export const Hero: React.FC = () => {
       <div className={styles.cta}>
         <a href={`mailto:${EMAIL}`}>
           <Button>Hire me now!</Button>
+        </a>
+        <a className={styles.resume} target='_blank' href={`/view-resume`}>
+          <Button>
+            <FaFilePdf /> <span>Download resume</span>
+          </Button>
         </a>
       </div>
     </Section>
