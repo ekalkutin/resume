@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
             <a href='/#contact'>Contact</a>
           </li>
           <li className={styles.resume}>
-            <a href={'/'}>
+            <a target='_blank' href={'/view-resume'}>
               <Button>Resume</Button>
             </a>
           </li>

@@ -1,8 +1,9 @@
 import path from 'node:path';
 
-import { Configuration } from 'webpack';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CopyPlugin from 'copy-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { Configuration } from 'webpack';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -68,6 +69,14 @@ const configuration: Configuration = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'public/files',
+          to: path.join(process.cwd(), 'build', 'client', 'assets', 'files'),
+        },
+      ],
     }),
   ],
   resolve: {
