@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaFilePdf } from 'react-icons/fa6';
+import { FaFilePdf, FaCalendarDay } from 'react-icons/fa6';
 
 import { Button } from 'client/components/Button';
 import { Section } from 'client/components/Section';
-import { EMAIL } from 'client/constants/email';
 
 import styles from './hero.module.css';
 
@@ -36,10 +35,16 @@ export const Hero: React.FC = () => {
         experiences.
       </p>
       <div className={styles.cta}>
-        <a href={`mailto:${EMAIL}`}>
-          <Button>Hire me now!</Button>
+        <a
+          target='_blank'
+          href={`https://calendar.app.google/Y9YYqtbuNvyVskWf8`}
+        >
+          <Button>
+            <FaCalendarDay />
+            <span>Let's meet!</span>
+          </Button>
         </a>
-        <a className={styles.resume} target='_blank' href={`/view-resume`}>
+        <a target='_blank' href={`/view-resume`}>
           <Button>
             <FaFilePdf /> <span>Download resume</span>
           </Button>
